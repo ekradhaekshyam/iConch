@@ -4,7 +4,7 @@
 //
 //  Created by Omkar on 02/03/13.
 //  Copyright (c) 2013 Omkar Nisal. All rights reserved.
-//
+//  Inspiration: https://github.com/dcgrigsby/MicBlow
 
 #import "ViewController.h"
 
@@ -24,10 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
-    
     
     
 	NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
