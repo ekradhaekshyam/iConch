@@ -15,9 +15,16 @@
 	AVAudioRecorder *recorder;
 	NSTimer *levelTimer;
 	double lowPassResults;
+    BOOL isPlaying;
+    NSInteger playingtimeCount;
+    NSTimer *PlayerTimer;
 }
-
+@property (nonatomic, assign) BOOL isPlaying;
+@property (nonatomic, assign)    NSInteger playingtimeCount;
+@property (nonatomic, retain) NSTimer *PlayerTimer;
 - (void)levelTimerCallback:(NSTimer *)timer;
-
+-(void) waveplaySound ;
+-(void) finishConchSound;
+-(void) startConchSound;
 
 @end
